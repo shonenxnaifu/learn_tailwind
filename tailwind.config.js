@@ -3,6 +3,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      height: {
+        // 15: '3.75rem'
+      },
       spacing: {
         13: '3.25rem'
       },

@@ -510,6 +510,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -615,12 +619,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
 }
 
-.mb-96 {
-  margin-bottom: 24rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mt-64 {
+  margin-top: 16rem;
+}
+
+.mb-96 {
+  margin-bottom: 24rem;
 }
 
 .block {
@@ -635,8 +643,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-\[4\/3\] {
+  aspect-ratio: 4 / 3;
 }
 
 .h-32 {
@@ -758,6 +782,14 @@ Ensure the default browser behavior of the `hidden` attribute.
        columns: 3;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
@@ -766,16 +798,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .overflow-y-scroll {
   overflow-y: scroll;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -888,18 +928,57 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
+.bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/src\/img\/image1\.jpg\'\)\] {
+  background-image: url('/src/img/image1.jpg');
+}
+
+.bg-\[url\(\'\/src\/img\/image1\.jpeg\'\)\] {
+  background-image: url('/src/img/image1.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image2\.jpeg\'\)\] {
+  background-image: url('/src/img/image2.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image3\.jpeg\'\)\] {
+  background-image: url('/src/img/image3.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image4\.jpeg\'\)\] {
+  background-image: url('/src/img/image4.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image5\.jpeg\'\)\] {
+  background-image: url('/src/img/image5.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image6\.jpeg\'\)\] {
+  background-image: url('/src/img/image6.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image7\.jpeg\'\)\] {
+  background-image: url('/src/img/image7.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image8\.jpeg\'\)\] {
+  background-image: url('/src/img/image8.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image9\.jpeg\'\)\] {
+  background-image: url('/src/img/image9.jpeg');
+}
+
+.bg-\[url\(\'\/src\/img\/image10\.jpeg\'\)\] {
+  background-image: url('/src/img/image10.jpeg');
 }
 
 .from-blue-500 {
@@ -926,6 +1005,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-scroll {
@@ -966,8 +1049,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
-.p-12 {
-  padding: 3rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-5 {
@@ -1186,6 +1269,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-1000 {
   transition-delay: 1000ms;
 }
@@ -1306,6 +1395,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-95:hover {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-sky-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
@@ -1364,6 +1459,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .group:hover .group-hover\:rotate-180 {
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:rotate-12 {
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1457,10 +1563,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-wrap: wrap;
   }
 
-  .sm\:justify-center {
-    justify-content: center;
-  }
-
   .sm\:justify-evenly {
     justify-content: space-evenly;
   }
@@ -1501,12 +1603,48 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:aspect-\[3\/4\] {
+    aspect-ratio: 3 / 4;
+  }
+
   .md\:w-80 {
     width: 20rem;
   }
 
   .md\:max-w-5xl {
     max-width: 64rem;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:text-6xl {
@@ -1516,10 +1654,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1551,5 +1685,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:aspect-\[4\/3\] {
+    aspect-ratio: 4 / 3;
   }
 }
